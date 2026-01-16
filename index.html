@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boardwalk Clay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Your public site content will go here -->
+  <header>
+    <h1>Boardwalk Clay</h1>
+    <p>Software. Movement. Story. Built from the Boardwalk.</p>
+  </header>
+
+  <!-- Invisible Admin Hotspot -->
+  <div id="admin-hotspot"></div>
+
+  <script>
+    let tapCount = 0;
+    let tapTimer;
+
+    const hotspot = document.getElementById("admin-hotspot");
+
+    hotspot.addEventListener("click", () => {
+      tapCount++;
+
+      clearTimeout(tapTimer);
+      tapTimer = setTimeout(() => tapCount = 0, 1200);
+
+      if (tapCount === 6) {
+        window.location.href = "/admin/login.html";
+      }
+    });
+  </script>
+
+  <style>
+    #admin-hotspot {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      z-index: 9999;
+      background: transparent;
+    }
+  </style>
+</body>
+</html>
