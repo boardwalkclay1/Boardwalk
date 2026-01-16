@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Albums</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="admin-body">
+  <aside class="sidebar">
+    <h2>Boardwalk Clay</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="software.html">Software Projects</a>
+      <a href="courses.html">Courses</a>
+      <a href="longboard.html">Longboard Dancing</a>
+      <a href="albums.html" class="active">Albums</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Albums</h1>
+
+    <section class="panel">
+      <h2>Add / Edit Album</h2>
+
+      <label>Album Title</label>
+      <input type="text">
+
+      <label>Album Description</label>
+      <textarea></textarea>
+
+      <label>Cover Image URL</label>
+      <input type="url">
+
+      <label>Price (USD)</label>
+      <input type="number">
+
+      <label>Tracklist (one per line)</label>
+      <textarea placeholder="Track 1&#10;Track 2&#10;Track 3"></textarea>
+
+      <label>Preview Audio URL (optional)</label>
+      <input type="url">
+
+      <button class="btn btn-primary save">Save Album</button>
+    </section>
+
+    <section class="panel">
+      <h2>Existing Albums</h2>
+      <p style="color:var(--muted);font-size:12px;">Albums will appear here once backend is connected.</p>
+    </section>
+  </main>
+</body>
+</html>
