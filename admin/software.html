@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Software Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="admin-body">
+  <aside class="sidebar">
+    <h2>Boardwalk Clay</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="software.html" class="active">Software Projects</a>
+      <a href="courses.html">Courses</a>
+      <a href="longboard.html">Longboard Dancing</a>
+      <a href="albums.html">Albums</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Software Projects</h1>
+
+    <section class="panel">
+      <h2>Add / Edit Project</h2>
+
+      <label>Project Title</label>
+      <input type="text">
+
+      <label>Short Tagline</label>
+      <input type="text">
+
+      <label>Problem Statement</label>
+      <textarea></textarea>
+
+      <label>Your Solution</label>
+      <textarea></textarea>
+
+      <label>Cover Image URL</label>
+      <input type="url">
+
+      <label>Tech Stack</label>
+      <input type="text">
+
+      <label>Live URL</label>
+      <input type="url">
+
+      <label>GitHub Repo URL</label>
+      <input type="url">
+
+      <button class="btn btn-primary save">Save Project</button>
+    </section>
+
+    <section class="panel">
+      <h2>Existing Projects</h2>
+      <p style="color:var(--muted);font-size:12px;">This will list all saved projects once backend is connected.</p>
+    </section>
+  </main>
+</body>
+</html>
