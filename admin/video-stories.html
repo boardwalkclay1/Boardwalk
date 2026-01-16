@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Video Stories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="admin-body">
+  <aside class="sidebar">
+    <h2>Boardwalk Clay</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="software.html">Software Projects</a>
+      <a href="courses.html">Courses</a>
+      <a href="longboard.html">Longboard Dancing</a>
+      <a href="albums.html">Albums</a>
+      <a href="story.html">My Story</a>
+      <a href="video-stories.html" class="active">Video Stories</a>
+      <a href="products.html">Products</a>
+      <a href="social.html">Social Links</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Video Stories</h1>
+
+    <section class="panel">
+      <h2>Add / Edit Video Story</h2>
+
+      <label>Video Title</label>
+      <input type="text">
+
+      <label>Description</label>
+      <textarea placeholder="Describe what was happening in your life at this moment..."></textarea>
+
+      <label>Video URL</label>
+      <input type="url">
+
+      <label>Date</label>
+      <input type="text" placeholder="2026-01-16">
+
+      <button class="btn btn-primary save">Save Video Story</button>
+    </section>
+
+    <section class="panel">
+      <h2>Existing Video Stories</h2>
+      <p style="color:var(--muted);font-size:12px;">Your timeline entries will appear here once backend is connected.</p>
+    </section>
+  </main>
+</body>
+</html>
