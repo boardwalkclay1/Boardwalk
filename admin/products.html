@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin • Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body class="admin-body">
+  <aside class="sidebar">
+    <h2>Boardwalk Clay</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="software.html">Software Projects</a>
+      <a href="courses.html">Courses</a>
+      <a href="longboard.html">Longboard Dancing</a>
+      <a href="albums.html">Albums</a>
+      <a href="story.html">My Story</a>
+      <a href="video-stories.html">Video Stories</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="social.html">Social Links</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <h1>Products</h1>
+
+    <section class="panel">
+      <h2>Add / Edit Product</h2>
+
+      <label>Product Name</label>
+      <input type="text">
+
+      <label>Description</label>
+      <textarea></textarea>
+
+      <label>Price (USD)</label>
+      <input type="number">
+
+      <label>Product Image URL</label>
+      <input type="url">
+
+      <label>Purchase Link</label>
+      <input type="url">
+
+      <button class="btn btn-primary save">Save Product</button>
+    </section>
+
+    <section class="panel">
+      <h2>Existing Products</h2>
+      <p style="color:var(--muted);font-size:12px;">Products will appear here once backend is connected.</p>
+    </section>
+  </main>
+</body>
+</html>
