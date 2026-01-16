@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boardwalk Clay • Admin Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="auth-body">
+  <div class="auth-shell">
+    <div class="auth-panel">
+      <div class="auth-brand">
+        <div class="auth-logo">BC</div>
+        <div>
+          <div class="auth-title">Boardwalk Clay</div>
+          <div class="auth-sub">Admin Console</div>
+        </div>
+      </div>
+
+      <form class="auth-form" onsubmit="handleLogin(event)">
+        <label class="field-label">Email</label>
+        <input type="email" id="login-email" placeholder="you@boardwalkclay.com" required>
+
+        <label class="field-label">Password</label>
+        <input type="password" id="login-password" placeholder="••••••••" required>
+
+        <button type="submit" class="btn btn-primary auth-btn">Sign In</button>
+      </form>
+
+      <div class="auth-footnote">
+        This area is private. Only you control the story, prices, and content.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin(e) {
+      e.preventDefault();
+      // TODO: Replace with real auth later.
+      // For now, simple front-end gate:
+      const email = document.getElementById("login-email").value;
+      const password = document.getElementById("login-password").value;
+
+      if (email && password) {
+        // In production, validate via backend.
+        window.location.href = "/admin/home.html";
+      }
+    }
+  </script>
+</body>
+</html>
