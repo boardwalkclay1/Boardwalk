@@ -2,45 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Admin • My Story</title>
+  <title>My Story • Boardwalk Clay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
-<body class="admin-body">
-  <aside class="sidebar">
-    <h2>Boardwalk Clay</h2>
-    <nav>
-      <a href="home.html">Home</a>
-      <a href="software.html">Software Projects</a>
-      <a href="courses.html">Courses</a>
-      <a href="longboard.html">Longboard Dancing</a>
-      <a href="albums.html">Albums</a>
-      <a href="story.html" class="active">My Story</a>
-      <a href="video-stories.html">Video Stories</a>
-      <a href="products.html">Products</a>
-      <a href="social.html">Social Links</a>
-      <a href="settings.html">Settings</a>
-    </nav>
-  </aside>
+<body class="page story-page">
 
-  <main class="main">
+  <header class="hero story-hero">
     <h1>My Story</h1>
+    <p>The journey that shaped the movement, the code, and the vision.</p>
+  </header>
 
-    <section class="panel">
-      <h2>Story Content</h2>
+  <section class="story-body">
+    <img src="images/story-header.jpg" class="story-header-img">
+    <p>Your story content goes here...</p>
+  </section>
 
-      <label>Story Title</label>
-      <input type="text" placeholder="My Journey">
+  <section class="video-stories-link">
+    <a href="video-stories.html" class="btn">Watch Video Stories</a>
+  </section>
 
-      <label>Story Body</label>
-      <textarea placeholder="Write your story here..."></textarea>
-
-      <label>Header Image URL</label>
-      <input type="url">
-
-      <button class="btn btn-primary save">Save Story</button>
-    </section>
-  </main>
 </body>
 </html>
