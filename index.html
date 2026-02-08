@@ -8,15 +8,39 @@
 </head>
 
 <body>
+
   <header>
     <h1>Boardwalk Clay</h1>
     <p>Software. Movement. Story. Built from the Boardwalk.</p>
   </header>
 
-  <!-- Invisible Admin Hotspot -->
+  <!-- Invisible Admin Hotspot (4 taps) -->
   <div id="admin-hotspot"></div>
 
+  <main class="container fade-in">
+
+    <h2 class="center" style="margin-bottom: 30px;">
+      Welcome to Boardwalk Clay
+    </h2>
+
+    <!-- Your main index buttons -->
+    <div class="bubble mt-20">
+      <h3>Explore</h3>
+      <div class="mt-20">
+        <a class="btn" href="longboard.html">Longboard Stories</a>
+        <a class="btn" href="video-stories.html">Video Stories</a>
+        <a class="btn" href="admin.html">Admin Panel</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Boardwalk Clay — All Rights Reserved
+  </footer>
+
   <script>
+    // 4‑tap admin unlock
     let tapCount = 0;
     let tapTimer;
 
@@ -28,13 +52,14 @@
       clearTimeout(tapTimer);
       tapTimer = setTimeout(() => tapCount = 0, 1200);
 
-      if (tapCount === 6) {
+      if (tapCount === 4) {
         window.location.href = "/admin/login.html";
       }
     });
   </script>
 
   <style>
+    /* Invisible admin hotspot */
     #admin-hotspot {
       position: fixed;
       top: 0;
@@ -45,5 +70,6 @@
       background: transparent;
     }
   </style>
+
 </body>
 </html>
